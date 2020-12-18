@@ -4,5 +4,5 @@ RUN apk add build-base
 COPY requirements.txt  /game/requirements.txt
 WORKDIR /game
 RUN pip install --no-cache-dir -r requirements.txt
-
+CMD [ "python", "/moonlanding/main.py" ]
 
